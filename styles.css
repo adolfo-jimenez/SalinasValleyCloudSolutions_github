@@ -18,10 +18,15 @@ body {
     /*display: grid;
     grid-template-columns: 1fr;
     background: url("./images/purple.jpg");*/
-    background: url("./images/ana-abad-FdpZjh2yvp0-unsplash.jpg") no-repeat;
+    background-color: rgba(0, 0, 0, 0.2);
+    height: 120vh;
+}
+
+.homePageBackground {
+    background: url("./images/cesar-couto-pC2xOplxsVs-unsplash.jpg") no-repeat;
     background-position: center;
     background-size: cover;
-    height: 100vh;
+    height: 120vh;
 }
 
 .brand {
@@ -30,10 +35,7 @@ body {
     background-color: blue;
     font-size: 10px;
     padding: 3px;
-}
 
-.brand-rights small {
-    color: white;
 }
 
 .nav-wrapper {
@@ -88,7 +90,7 @@ body {
 }
 
 .sidebar {
-    font-family: 'Pacifico', cursive;
+    font-family: 'Ink Free';
     padding: 0px;
     position: fixed;
     left: -250px;
@@ -99,12 +101,13 @@ body {
 }
 
 .sidebar header {
-    font-size: 10px;
+    font-size: 25px;
     color: white;
     text-align: center;
-    line-height: 65px;
+    line-height: 35px;
     background: #063146;
     user-select: none;
+    padding: 20px;
 }
 
 .sidebar ul a {
@@ -122,6 +125,11 @@ body {
     border-top: 1px solid rgba(255,255,255,.4);
     border-bottom: 1px solid black;
     transition: .4s;
+}
+
+.sidebar p {
+    text-align: center;
+    color: white;
 }
 
 
@@ -163,7 +171,7 @@ label #btn {
 label #cancel {
     z-index: 1111;
     left: -195px;
-    top: 17px;
+    top: 27px;
     font-size: 30px;
     color: #0a5275;
     padding: 4px 9px;
@@ -181,7 +189,7 @@ label #cancel {
 }
 
 #check:checked ~ label #cancel {
-    left: 195px;
+    left: 205px;
 }
 
 /*
@@ -203,7 +211,7 @@ section {
 }
 
 .mainPageImage {
-    background-color: rgba(0, 0, 0, 0.4);
+    /*background-color: rgba(0, 0, 0, 0.4);*/
 }
 
 .mainPageImage img {
@@ -224,7 +232,7 @@ section {
 
 .brief {
     /*background-color: mediumpurple;*/
-    background-color: rgba(0, 0, 0, 0.4);
+    /*background-color: rgba(0, 0, 0, 0.4);*/
     text-align: center;
     padding-top: 30px;
     color: white;
@@ -239,19 +247,25 @@ section {
     padding-right: 300px;
     font-size: 20px;
     padding-bottom: 15px;
+    font-weight: normal;
 }
 
 .blog {
     font-family: 'Permanent Marker', cursive;
-    background-color: rgba(0, 0, 0, 0.4);
+    /*background-color: rgba(0, 0, 0, 0.4);*/
     text-align: center;
     color: white;
 }
 
 .brand-rights {
-    /*background-color:darkcyan;*/
-    background-color: rgba(0,43,32,0.5);
+    background: #063146;
+    /*background-color: rgba(0,43,32,.8);*/
     display: flex;
     justify-content: center;
+}
+
+.brand-rights small {
+    color: white;
+    text-align: center;
     padding: 30px;
 }

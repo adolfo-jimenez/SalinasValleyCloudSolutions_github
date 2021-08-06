@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Tangerine');
+ @import url('https://fonts.googleapis.com/css?family=Tangerine');
 
 * {
     margin: 0px;
@@ -38,52 +38,6 @@ body {
 
 }
 
-.nav-wrapper {
-    display: flex;
-    justify-content: space-between;
-    padding: 38px;
-    background-color: orangered;
-    font-family: 'Segoe MDL2 Assets';
-}
-
-.left-side {
-    display: flex;
-}
-
-.nav-wrapper > .left-side > div {
-    margin-right: 20px;
-    text-transform: uppercase;
-    font-size: 0.9rem;
-}
-
-.nav-link-wrapper {
-    height: 22px;
-    border-bottom: 1px solid transparent;
-    transition: border-bottom 0.5s;
-}
-
-.active-nav-link {
-    border-bottom: 1px solid black;
-    transition: border-bottom 0.5s;
-}
-
-.active-nav-link a {
-        color: black !important;
-}
-
-.nav-link-wrapper a {
-    color: white;
-    text-decoration: none;
-    transition: color 0.5s;
-}
-
-.nav-link-wrapper:hover {
-    border-bottom: 1px solid black;
-}
-
-.nav-link-wrapper a:hover {
-    color: black;
-}
 
 .right-side {
 
@@ -268,4 +222,172 @@ section {
     color: white;
     text-align: center;
     padding: 30px;
+}
+
+/* Media Queries */
+
+
+@media (max-device-width: 900px) {
+    
+    .mainPageImage img {
+        height: 125px;
+        width: 250px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .mainPageImage h1 {
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .brief { 
+        margin: 0px;
+        padding: 0px;
+        padding-top: 75px;
+    }
+
+    .brief h1 {
+        font-size: 15px;
+        color: white;
+        margin-left: 0px;
+    }
+
+    .brief p {
+    padding-left: 0px;
+    padding-right: 0px;
+    font-size: 10px;
+    padding-bottom: 0px;
+    font-weight: normal;
+    color: white;
+    }
+
+    .brand-rights small {
+        font-size: 10px;
+        margin-left: 0px;
+        color: white;
+    }
+
+    .sidebar p {
+        font-size:10px;
+        color: black;
+    }
+
+    .sidebar {
+        font-family: 'Ink Free';
+        padding: 0px;
+        position: fixed;
+        left: -250px;
+        width: 250px;
+        height: 100%;
+        background: #063146;
+        transition: all .5s ease;
+    }
+
+    .sidebar header {
+        font-size: 15px;
+        color: white;
+        text-align: center;
+        line-height: 15px;
+        background: #063146;
+        user-select: none;
+        padding: 20px;
+        }
+
+    .sidebar ul a {
+        display: block;
+        height: 100%;
+        width: 100%;
+        line-height: 45px;
+        font-size: 25px;
+        color: white;
+        padding-left: 40px;
+        box-sizing: border-box;
+        border-top: 1px solid rgba(255,255,255,.4);
+        border-bottom: 1px solid black;
+        transition: .4s;
+    }
+
+    .sidebar p {
+        text-align: center;
+        color: white;
+    }
+
+
+    ul li:hover a {
+        padding-left: 50px;
+        color: red;
+    }
+
+    .sidebar ul a i {
+        margin-right: 16px;
+    }
+
+    #check {
+        display: none;
+    }
+
+    /*
+    Very important note to take here. #btn is referring to the stack corner
+    sidebar icon while the #cancel is referring to the "x" button on the top left
+    corner.
+*/
+
+    label #btn, label #cancel {
+        position: absolute;
+        cursor: pointer;
+        background: #042331;
+        border-radius: 3px;
+    }
+
+    label #btn {
+        left: 40px;
+        top: 25px;
+        font-size: 35px;
+        color: white;
+        padding: 6px 12px;
+        transition: all .5s;
+    }
+
+    label #cancel {
+        z-index: 1111;
+        left: -195px;
+        top: 27px;
+        font-size: 30px;
+        color: #0a5275;
+        padding: 4px 9px;
+        transition: all .5s ease;
+    }
+
+    #check:checked ~ .sidebar {
+        left: 0;
+    }
+
+    #check:checked ~ label #btn {
+        left: 195px;
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    #check:checked ~ label #cancel {
+        left: 205px;
+    }
+
+    /*
+    This "section" toggles the section background from either being in a
+    static position or being pushed back when the user selects the stack
+    sidebar button.
+*/
+
+    #check:checked ~ section {
+        /*margin-left: 250px;*/
+        margin-left: 0px;
+    }
+
+    section {
+        /*background: url("./images/ana-abad-FdpZjh2yvp0-unsplash.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;*/
+    }
 }

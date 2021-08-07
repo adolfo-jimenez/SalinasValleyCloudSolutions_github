@@ -29,6 +29,44 @@ body {
     height: 120vh;
 }
 
+.cage {
+    padding: 45px;
+    color: white;
+    font-family: 'Londrina Solid', cursive;
+}
+
+.cage img {
+    height: 375px;
+    width: 275px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+}
+
+.cage h1 {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    font-weight: 600;
+    font-size: 35px;
+}
+
+.cage h3 {
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    padding: 5px;
+    font-weight: 400;
+}
+
+.cage p {
+    display: flex;
+    justify-content: center;
+    padding: 8px;
+}
+
 .brand {
     font-family: 'Ink Free';
     color: white;

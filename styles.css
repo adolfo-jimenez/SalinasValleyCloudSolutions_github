@@ -242,12 +242,6 @@ section {
     font-weight: normal;
 }
 
-.blog {
-    font-family: 'Permanent Marker', cursive;
-    /*background-color: rgba(0, 0, 0, 0.4);*/
-    text-align: center;
-    color: white;
-}
 
 .brand-rights {
     background: #063146;
@@ -262,11 +256,97 @@ section {
     padding: 30px;
 }
 
-/* Media Queries */
 
+/*Blog page styles*/
+
+.blog-container {
+    max-width: 900px;
+    margin: auto;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    background: url("images/amr-taha-87HyqnGrCmg-unsplash.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.blog-container .sidebar ul {
+    background-color: #063146;
+}
+
+.blog-container .sidebar p {
+    color: red;
+}
+
+.blog-container h1, h2, h3, h4, h5, h6 {
+    padding: 10px 20px 10px 20px;
+    color: white;
+}
+
+main {
+    float: left;
+    width: 70%;
+    /*font-family: 'Permanent Marker', cursive;*/
+}
+
+main p {
+    font-size: 1.1rem;
+    line-height: 1.6rem;
+    color: white;
+}
+
+aside {
+    float: right;
+    width: 25%;
+    color: white;
+}
+
+aside ul {
+    padding: 0px 20px 0px 20px;
+}
+
+aside ul li {
+    font-size: 1.1rem;
+    line-height: 1.6rem;
+    list-style: none;
+    padding: 3px 0px 3px 0px;
+}
+
+aside p {
+    font-size: 1.1rem;
+    line-height: 1.6rem;
+    padding: 0px 20px 0px 20px;
+}
+
+footer section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: white;
+}
+
+footer p {
+    padding: 10px;
+}
+
+footer a {
+    padding: 0px 10px 0px 10px;
+}
+
+/* Media Queries */
+@media (max-width: 8.5in) {
+    article { grid-template-columns: 1fr 5% [start] 90% [end] 5% 1fr; }
+}
+
+@media (max-width: 700px) {
+    main {
+        float: none;
+        width: 100%
+    }
+}
 
 @media (max-device-width: 900px) {
-    
+
     .mainPageImage img {
         height: 125px;
         width: 250px;
@@ -279,26 +359,26 @@ section {
         text-align: center;
     }
 
-    .brief { 
+    .brief {
         margin: 0px;
         padding: 0px;
         padding-top: 75px;
     }
 
-    .brief h1 {
-        font-size: 15px;
-        color: white;
-        margin-left: 0px;
-    }
+        .brief h1 {
+            font-size: 15px;
+            color: white;
+            margin-left: 0px;
+        }
 
-    .brief p {
-    padding-left: 0px;
-    padding-right: 0px;
-    font-size: 10px;
-    padding-bottom: 0px;
-    font-weight: normal;
-    color: white;
-    }
+        .brief p {
+            padding-left: 0px;
+            padding-right: 0px;
+            font-size: 10px;
+            padding-bottom: 0px;
+            font-weight: normal;
+            color: white;
+        }
 
     .brand-rights small {
         font-size: 10px;
@@ -307,7 +387,7 @@ section {
     }
 
     .sidebar p {
-        font-size:10px;
+        font-size: 10px;
         color: black;
     }
 
@@ -322,34 +402,34 @@ section {
         transition: all .5s ease;
     }
 
-    .sidebar header {
-        font-size: 15px;
-        color: white;
-        text-align: center;
-        line-height: 15px;
-        background: #063146;
-        user-select: none;
-        padding: 20px;
+        .sidebar header {
+            font-size: 15px;
+            color: white;
+            text-align: center;
+            line-height: 15px;
+            background: #063146;
+            user-select: none;
+            padding: 20px;
         }
 
-    .sidebar ul a {
-        display: block;
-        height: 100%;
-        width: 100%;
-        line-height: 45px;
-        font-size: 25px;
-        color: white;
-        padding-left: 40px;
-        box-sizing: border-box;
-        border-top: 1px solid rgba(255,255,255,.4);
-        border-bottom: 1px solid black;
-        transition: .4s;
-    }
+        .sidebar ul a {
+            display: block;
+            height: 100%;
+            width: 100%;
+            line-height: 45px;
+            font-size: 25px;
+            color: white;
+            padding-left: 40px;
+            box-sizing: border-box;
+            border-top: 1px solid rgba(255,255,255,.4);
+            border-bottom: 1px solid black;
+            transition: .4s;
+        }
 
-    .sidebar p {
-        text-align: center;
-        color: white;
-    }
+        .sidebar p {
+            text-align: center;
+            color: white;
+        }
 
 
     ul li:hover a {

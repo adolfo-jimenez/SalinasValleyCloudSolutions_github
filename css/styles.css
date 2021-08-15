@@ -23,7 +23,7 @@ body {
 }
 
 .homePageBackground {
-    background: url("./images/cesar-couto-pC2xOplxsVs-unsplash.jpg") no-repeat;
+    background: url("../images/cesar-couto-pC2xOplxsVs-unsplash.jpg") no-repeat;
     background-position: center;
     background-size: cover;
     height: 120vh;
@@ -77,9 +77,9 @@ body {
 }
 
 
-.right-side {
+/*.right-side {
 
-}
+}*/
 
 .sidebar {
     font-family: 'Ink Free';
@@ -102,11 +102,10 @@ body {
     padding: 20px;
 }
 
+
+
 .sidebar ul a {
     display: block;
-    height: 100%;
-    width: 100%;
-    line-height: 65px;
     height: 100%;
     width: 100%;
     line-height: 65px;
@@ -163,11 +162,12 @@ label #btn {
 label #cancel {
     z-index: 1111;
     left: -195px;
-    top: 27px;
-    font-size: 30px;
+    top: 34px;
+    font-size: 20px;
     color: #0a5275;
     padding: 4px 9px;
     transition: all .5s ease;
+    position: fixed;
 }
 
 #check:checked ~ .sidebar{
@@ -195,16 +195,16 @@ label #cancel {
     margin-left: 0px;
 }
 
-section {
-    /*background: url("./images/ana-abad-FdpZjh2yvp0-unsplash.jpg") no-repeat;
+/*section {
+    background: url("./images/ana-abad-FdpZjh2yvp0-unsplash.jpg") no-repeat;
     background-position: center;
     background-size: cover;
-    height: 100vh;*/
-}
+    height: 100vh;
+}*/
 
-.mainPageImage {
-    /*background-color: rgba(0, 0, 0, 0.4);*/
-}
+/*.mainPageImage {
+    background-color: rgba(0, 0, 0, 0.4);
+}*/
 
 .mainPageImage img {
     padding-top: 100px;
@@ -254,32 +254,6 @@ section {
     color: white;
     text-align: center;
     padding: 30px;
-}
-
-
-/*Blog page styles*/
-
-.blog-container {
-    max-width: 900px;
-    margin: auto;
-    border-left: 1px solid black;
-    border-right: 1px solid black;
-    background: url("images/amr-taha-87HyqnGrCmg-unsplash.jpg");
-    background-position: center;
-    background-size: cover;
-}
-
-.blog-container .sidebar ul {
-    background-color: #063146;
-}
-
-.blog-container .sidebar p {
-    color: red;
-}
-
-.blog-container h1, h2, h3, h4, h5, h6 {
-    padding: 10px 20px 10px 20px;
-    color: white;
 }
 
 main {
@@ -386,10 +360,10 @@ footer a {
         color: white;
     }
 
-    .sidebar p {
+    /*.sidebar p {
         font-size: 10px;
         color: black;
-    }
+    }*/
 
     .sidebar {
         font-family: 'Ink Free';
@@ -502,10 +476,10 @@ footer a {
         margin-left: 0px;
     }
 
-    section {
-        /*background: url("./images/ana-abad-FdpZjh2yvp0-unsplash.jpg") no-repeat;
+    /*section {
+    background: url("./images/ana-abad-FdpZjh2yvp0-unsplash.jpg") no-repeat;
     background-position: center;
     background-size: cover;
-    height: 100vh;*/
-    }
+    height: 100vh;
+    }*/
 }

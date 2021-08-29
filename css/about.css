@@ -12,6 +12,15 @@ body {
     height: 120vh;*/
 }
 
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+  }
+
 .sidebar {
     font-family: 'Ink Free';
     padding: 0px;
@@ -128,10 +137,10 @@ label #cancel {
 }
 
 .aboutMain {
-    background-image: url("../images/cesar-couto-pC2xOplxsVs-unsplash.jpg");
+    /*background-image: url("../images/cesar-couto-pC2xOplxsVs-unsplash.jpg");
     background-position: center;
     background-size: cover;
-    height: 120vh;
+    height: 120vh;*/
 }
 
 .about-bio {

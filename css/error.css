@@ -14,11 +14,16 @@ body {
     margin-left: 40px;
 }
 
-.contactBackground {
-    /*background: url("../images/cesar-couto-pC2xOplxsVs-unsplash.jpg") no-repeat;
+.container {
+    background-color: rgba(0, 0, 0, 0.2);
+    height: 120vh;
+}
+
+.homePageBackground {
+    background: url("../images/cesar-couto-pC2xOplxsVs-unsplash.jpg") no-repeat;
     background-position: center;
     background-size: cover;
-    height: 120vh;*/
+    height: 120vh;
 }
 
 #myVideo {
@@ -30,28 +35,42 @@ body {
     z-index: -1;
   }
 
-.container {
-    /*display: grid;
-    grid-template-columns: 1fr;
-    background: url("./images/purple.jpg");*/
-    background-color: rgba(0, 0, 0, 0.2);
-    height: 120vh;
+.cage {
+    padding: 45px;
+    color: white;
+    font-family: 'Londrina Solid', cursive;
 }
 
-.contactInfo {
+.cage img {
+    height: 375px;
+    width: 275px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
     justify-content: center;
-    padding-top: 100px;
+    padding: 25px;
 }
 
-.contactInfo h1 {
-    font-size: 45px;
-    text-align: center;
-    padding: 100px;
+.cage h1 {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    font-weight: 600;
+    font-size: 35px;
 }
 
-.contactInfo p {
-    font-size: 30px;
-    text-align: center;
+.cage h3 {
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    padding: 5px;
+    font-weight: 400;
+}
+
+.cage p {
+    display: flex;
+    justify-content: center;
+    padding: 8px;
 }
 
 .brand {
@@ -60,6 +79,7 @@ body {
     background-color: blue;
     font-size: 10px;
     padding: 3px;
+
 }
 
 
@@ -74,7 +94,7 @@ body {
     left: -250px;
     width: 250px;
     height: 100%;
-    /*background: url(".images/");*/
+    background: url(".images/");
     transition: all .5s ease;
 }
 
@@ -177,6 +197,7 @@ label #cancel {
 */
 
 #check:checked ~ section {
+    /*margin-left: 250px;*/
     margin-left: 0px;
 }
 
@@ -207,6 +228,26 @@ label #cancel {
     justify-content: center;
 }
 
+.brief {
+    /*background-color: mediumpurple;*/
+    /*background-color: rgba(0, 0, 0, 0.4);*/
+    text-align: center;
+    padding-top: 30px;
+    color: white;
+}
+
+.brief h1 {
+    padding: 15px;
+}
+
+.brief p {
+    padding-left: 300px;
+    padding-right: 300px;
+    font-size: 20px;
+    padding-bottom: 15px;
+    font-weight: normal;
+}
+
 
 .brand-rights {
     background: #063146;
@@ -219,6 +260,18 @@ label #cancel {
     color: white;
     text-align: center;
     padding: 30px;
+}
+
+main {
+    float: left;
+    width: 70%;
+    /*font-family: 'Permanent Marker', cursive;*/
+}
+
+main p {
+    font-size: 1.1rem;
+    line-height: 1.6rem;
+    color: white;
 }
 
 aside {

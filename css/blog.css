@@ -150,6 +150,10 @@ label #cancel {
     display: flex;
     justify-content: center;
     max-width: 100%;
+    /*position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;*/
 }
 
 .brand-rights small {
@@ -185,6 +189,16 @@ label #cancel {
 .blog-container h1, h2, h3, h4, h5, h6 {
     padding: 10px 20px 10px 20px;
     color: white;
+}
+
+.blogAbout {
+    justify-content: center;
+    text-align: center;
+}
+.blogAbout > img {
+    height: 200px;
+    width: 250px;
+    border-radius: 50% !important;
 }
 
 main {

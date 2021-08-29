@@ -1,0 +1,198 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    margin: 0px;
+    /*background: url("../images/");
+    background-position: center;
+    background-size: cover;
+    height: 120vh;*/
+}
+
+.sidebar {
+    font-family: 'Ink Free';
+    padding: 0px;
+    position: fixed;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: #063146;
+    transition: all .5s ease;
+}
+
+.sidebar header {
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    line-height: 35px;
+    background: #063146;
+    user-select: none;
+    padding: 20px;
+}
+
+.sidebar ul a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 65px;
+    height: 100%;
+    width: 100%;
+    line-height: 65px;
+    font-size: 25px;
+    color: white;
+    padding-left: 40px;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(255,255,255,.4);
+    border-bottom: 1px solid black;
+    transition: .4s;
+}
+
+.sidebar p {
+    text-align: center;
+    color: white;
+}
+
+
+ul li:hover a{
+    padding-left: 50px;
+    color: red;
+}
+
+.sidebar ul a i{
+    margin-right: 16px;
+}
+
+#check {
+    display: none;
+}
+
+/*
+    Very important note to take here. #btn is referring to the stack corner
+    sidebar icon while the #cancel is referring to the "x" button on the top left
+    corner.
+*/
+
+label #btn, label #cancel {
+    position: absolute;
+    cursor: pointer;
+    background: #042331;
+    border-radius: 3px;
+}
+
+label #btn {
+    left: 40px;
+    top: 25px;
+    font-size: 35px;
+    color: white;
+    padding: 6px 12px;
+    transition: all .5s;
+}
+
+label #cancel {
+    z-index: 1111;
+    left: -195px;
+    top: 34px;
+    font-size: 20px;
+    color: #0a5275;
+    padding: 4px 9px;
+    transition: all .5s ease;
+    position: fixed;
+}
+
+#check:checked ~ .sidebar{
+    left: 0;
+}
+
+#check:checked ~ label #btn {
+    left: 195px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+#check:checked ~ label #cancel {
+    left: 205px;
+}
+
+/*
+    This "section" toggles the section background from either being in a
+    static position or being pushed back when the user selects the stack
+    sidebar button.
+*/
+
+#check:checked ~ section {
+    /*margin-left: 250px;*/
+    margin-left: 0px;
+}
+
+.aboutMain {
+    background-image: url("../images/cesar-couto-pC2xOplxsVs-unsplash.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 120vh;
+}
+
+.about-bio {
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.2);
+    height: 120vh;
+}
+
+.container {
+    /*display: grid;
+    grid-template-columns: 1fr;
+    background: url("./images/purple.jpg");*/
+    background-color: rgba(0, 0, 0, 0.2);
+    height: 120vh;
+}
+
+.bio-images {
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+}
+
+.bio-images img {
+    height: 350px;
+    width: 650px;
+    /*padding-left: 5px;
+    padding-right: 5px;*/
+    border-radius: 50% !important;
+}
+
+.about-bio h1{
+    color: white;
+    text-align: center;
+    padding: 35px;
+    font-size: 35px;
+    font-weight: bolder;
+}
+
+.about-bio p {
+    font-family: "Ink Free";
+    text-align: center;
+    padding: 20px;
+    font-size: 25px;
+    background-color: white;
+    border-radius: 10px;
+    border-style: double;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.brand-rights {
+    background: #063146;
+    /*background-color: rgba(0,43,32,.8);*/
+    display: flex;
+    justify-content: center;
+}
+
+.brand-rights small {
+    color: white;
+    text-align: center;
+    padding: 30px;
+}

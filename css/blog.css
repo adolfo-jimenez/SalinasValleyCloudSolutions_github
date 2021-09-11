@@ -156,6 +156,14 @@ label #cancel {
     right: 0;*/
 }
 
+.bottomlock {
+    /*position:fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;*/
+  }
+
 .brand-rights small {
     color: white;
     text-align: center;

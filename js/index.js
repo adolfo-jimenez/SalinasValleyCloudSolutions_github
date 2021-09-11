@@ -1,36 +1,15 @@
-// This is my first JavaScript code!
+var bodyVar = document.querySelector(".homePageBackground")
 
-//Output function/
-console.log('Hello World');
+bodyVar.addEventListener("mouseenter", mouseEnterbodyVar);
 
-//Variable assignment.
-let baserock = 'KJ';
+function mouseEnterbodyVar() {
+    console.log("Mouse has hovered over body section of webpage");
 
-console.log(baserock);
+    /* Only records mouse input once per page visit, otherwise, the count doesn't stop */
+    bodyVar.removeEventListener("mouseenter", mouseEnterbodyVar);
+}
 
-//Object Oriented progamming.
-let person = {
-    name: 'Adolfo',
-    age: 29
-};
-
-console.log(person);
-
-//Assigning object variable.
-person.name = 'Al';
-
-console.log(person);
-
-//Alternative way of assign object variables.
-person['name'] = 'Max';
-
-console.log(person.name);
-
-//Array test code.
-let selectedColors = ['green', 'blue']
-
-console.log(selectedColors);
-
-selectedColors[20] = 'orange';
-
-console.log(selectedColors);
+/* This function outputs keyboard key codes. Used for mapping purposes*/
+document.addEventListener("keyup", function(event) {
+    console.log(event.keyCode);
+});
